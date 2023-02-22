@@ -1,0 +1,12 @@
+ /* p is our selector, color is our property and darkorchid is our value */
+ p, h1 {
+    color: darkorchid;
+    /*this is font size by %- 3 times default size
+    font- size: 300%; */
+    font-size: 1.5em; /*50% bigger than default */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-weight:bolder;
+}
+p a {color:goldenrod;}
+#firstlink {color:hotpink;}
+.redtext {color:red;}
