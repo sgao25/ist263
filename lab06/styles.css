@@ -1,6 +1,5 @@
-selector {font-family: Verdana, Geneva, Tahoma, sans-serif;}
-Grouped selectors h1, h2 {color: blueviolet;}
-.special {color: purple;}
-.evenrow {color:lightpink;}
+body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+h1, h2 {color: blueviolet;}
+.evenrow {background-color:lightpink;}
 h1 {font-size: 3 em;}
 h2 {font-size: 2 em;}
