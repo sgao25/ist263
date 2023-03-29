@@ -5,30 +5,32 @@ h1,h2,h3 {color: #481C2F;}
 nav {
     background-color: #BC8BAB;
     padding: 10px;
-    margin-bottom: 30px
+    margin-bottom: 30px;
 }
-nav a {color: #481C2F;border-radius}
-nav a: hover{ background-color:#AE9BCB;}
+nav a {
+    color: #481C2F;
+    border-radius: 5px;
+}
+nav a:hover{
+    background-color:#AE9BCB;
+}
 .evenrow {background-color:lightpink;}
 table,td,th {border: 1px solid black;}
+nav a span {
+    display: none;
+  }
 
 @media only screen and (max-width:600px){
     nav a {
         width: 100%;
         display: block; 
-        .span:none; 
     }
 }
 
 .class, .skills, .contact{padding:20px;}
 
-    .row1{
-        display:flex; 
-        flex-wrap:wrap; 
-    }
-    .row2{
-        display:flex; 
-        flex-wrap:wrap; 
-    }
-        
-
+.row1, .row2{
+    display:flex; 
+    flex-wrap:wrap; 
+}
+  
