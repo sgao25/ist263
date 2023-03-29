@@ -12,7 +12,7 @@ nav a: hover{ background-color:#AE9BCB;}
 .evenrow {background-color:lightpink;}
 table,td,th {border: 1px solid black;}
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width:600px){
     nav a {
         width: 100%;
         display: block; 
@@ -20,4 +20,4 @@ table,td,th {border: 1px solid black;}
     }
 }
 
-.class, .skills, .contact{padding:80px;}
+.class, .skills, .contact{padding:20px;}
