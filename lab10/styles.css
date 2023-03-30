@@ -27,7 +27,6 @@ nav a span {
         display: block; 
     }
     .map, .forms{
-        max-width: 100%;
         flex:1
     }
 }
