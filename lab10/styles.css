@@ -28,6 +28,9 @@ nav a span {
     }
     .map, .forms{
         flex:1
+    #content {
+        width:50%
+    }
     }
 }
 
