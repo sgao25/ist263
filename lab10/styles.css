@@ -1,4 +1,5 @@
 body {background-color:#F2C6F2;}
+.row2{background-color: #F2C6F2;}
 p, ol, ul {color: #7d34ea;}
 a {color: #49276D;}
 h1,h2,h3 {color: #481C2F;}
@@ -20,12 +21,17 @@ nav a span {
     display: none;
   }
 
-@media only screen and (max-width:800px){
+@media only screen and (max-width:600px){
     nav a {
         width: 100%;
         display: block; 
     }
+    .row1, .row2{
+        max-width: 100%;
+        flex:1
+    }
 }
+
 
 .row1, .row2{
     display:flex; 
