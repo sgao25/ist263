@@ -27,8 +27,6 @@ nav a span {
     }
 }
 
-.class, .skills, .contact{padding:20px;}
-
 .row1, .row2{
     display:flex; 
     flex-wrap:wrap; 
