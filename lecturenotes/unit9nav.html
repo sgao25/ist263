@@ -15,12 +15,9 @@
         /* flex- end: push everything to the right*/ 
         /* justify-content must be on row container */
         }
-        nav div {
-            padding: 5px;
-        }
         .nav2 {
             justify-content: space-around;
-            /* this is more specific than the na justify-contnt */
+            /* this is more specific than the nav justify-contnt */
         }
         .nav3 {
             justify-content: space-between;
@@ -31,13 +28,17 @@
         .navsplit {
             display:flex;
         }
+
+        nav div {
+            padding: 5px;
+        }
     </style>
 </head>
 
 <body>
     <h1>Navigation</h1>
     <h2>Flex end</h2>
-    <nav>
+    <nav class="nav1">
         <div>Home</div>
         <div>About Us</div>
         <div>Products</div>
