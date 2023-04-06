@@ -45,3 +45,11 @@ nav a span {
 .skip:focus{
     left:10px;
 }
+.skip {
+    background-color: #660066;
+    padding: 5px;
+    text-decoration: none;
+    position: absolute; 
+    top: 10px;
+    left:-999px;
+}
