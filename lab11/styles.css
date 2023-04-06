@@ -44,6 +44,7 @@ nav a span {
 
 .skip {
     background-color: #b30000;
+    color:#ffffff;
     padding: 5px;
     text-decoration: none;
     position: absolute; 
