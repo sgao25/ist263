@@ -64,14 +64,17 @@
 #protein{
     float:right;
     margin-right: 20px;
+    flex:wrap;
 }
 #carb{
     float:right;
     margin-right: 20px;
+    flex:wrap;
 }
 #fat{
     float:right;
     margin-right: 20px;
+    flex:wrap;
 }
 .carb{
     clear:both;
@@ -110,6 +113,7 @@
 }
 .heartandlungs{
     margin:10px;
+    max-width: 100%;
 }
 .strength{
     margin:10px;
@@ -121,6 +125,7 @@
 }
 .youtube{
     display:flex;
+    flex:wrap;
 }
 .pamela{
     padding:10px;
