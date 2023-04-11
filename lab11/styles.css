@@ -54,3 +54,5 @@ nav a span {
 .skip:focus{
     left:10px;
 }
+
+table,td,th {border: 1px solid black;}

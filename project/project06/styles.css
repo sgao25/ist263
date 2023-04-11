@@ -1,0 +1,92 @@
+.skip {
+    background-color: #b30000;
+    color:#ffffff;
+    padding: 5px;
+    text-decoration: none;
+    position: absolute; 
+    top: 10px;
+    left:-999px;
+}
+.skip:focus{
+    left:10px;
+}
+@media only screen and (max-width:600px){
+    span{display:none;}
+    .dietandhealth{display:wrap;}
+}
+
+.copyright {float: left;}
+
+
+
+
+#authorpicture{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+#nutritionpicture{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+#fitnesspicture{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+.part2{
+    clear:both;
+}
+.part3{
+    clear:both;
+}
+.part4{
+    clear:both;
+}
+.introduction{
+    border: 1px solid black;
+    padding: 10px;
+    width:200px;
+}
+.nutrition{
+    border: 1px solid black;
+    padding: 10px;
+    width:200px;
+}
+.fitness{
+    border: 1px solid black;
+    padding: 10px;
+    width:200px;
+}
+
+#protein{
+    float:right;
+    margin-right: 20px;
+}
+#carb{
+    float:right;
+    margin-right: 20px;
+}
+#fat{
+    float:right;
+    margin-right: 20px;
+}
+.carb{
+    clear:both;
+}
+.fat{
+    clear:both;
+}
+.type1{
+    magrin:10px;
+}
+.type2{
+    margin:10px;
+}
+.kidney{
+    margin:10px;
+}
+.fatintake{
+    margin:10px;
+}
