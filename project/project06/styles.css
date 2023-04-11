@@ -10,12 +10,13 @@
 .skip:focus{
     left:10px;
 }
+
 @media only screen and (max-width:600px){
     span{display:none;}
     .dietandhealth{display:wrap;}
 }
 
-.copyright {float: left;}
+.copyright {float: right;}
 
 
 
@@ -78,8 +79,12 @@
 .fat{
     clear:both;
 }
+.dietandhealth{
+    padding:10px;
+    border:1px solid black;
+}
 .type1{
-    magrin:10px;
+    margin:10px;
 }
 .type2{
     margin:10px;
@@ -89,4 +94,37 @@
 }
 .fatintake{
     margin:10px;
+}
+.heartrate{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.tips{
+    padding:6px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+.losefat{
+    margin:10px;
+}
+.heartandlungs{
+    margin:10px;
+}
+.strength{
+    margin:10px;
+}
+.screenshot{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.youtube{
+    display:flex;
+}
+.pamela{
+    padding:10px;
+}
+.fitnessmarshall{
+    padding:10px
 }
