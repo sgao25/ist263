@@ -13,7 +13,5 @@
 
 @media only screen and (max-width:600px){
     span{display:none;}
-    .dietandhealth{display:wrap;}
 }
-
 .copyright {float: right;}
