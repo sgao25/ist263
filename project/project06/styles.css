@@ -74,7 +74,9 @@
 #fat{
     float:right;
     margin-right: 20px;
+    margin-left:30px;
     flex:wrap;
+
 }
 .carb{
     clear:both;
@@ -99,9 +101,8 @@
     margin:10px;
 }
 .heartrate{
-    display:flex;
+    display: flex;
     justify-content: center;
-    align-items: center;
 }
 .tips{
     padding:6px;
