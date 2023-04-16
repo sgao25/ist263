@@ -7,6 +7,11 @@
     <title>Home</title>
     <link rel="stylesheet" href="styles.css">
 <style>
+.plate{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #protein{
     float:right;
     margin-right: 20px;
@@ -32,7 +37,7 @@
 .dietandhealth{
     padding:10px;
     border:1px solid black;
-    max-width: 75%;
+    max-width: 100%;
 
 }
 .type1{
@@ -51,7 +56,7 @@
     margin:10px;
 }
 .foodrecipes{
-    padding-top: 300px;
+    padding-top: 30px;
     max-width: 100%;
 }
 .repicpes{
@@ -61,9 +66,8 @@
 }
 
 @media only screen and (max-width:600px){
-    .section2{margin-top: 250px; max-width: 100%;}
+    .section2{margin-top: 50px; max-width: 100%;}
     .dietandhealth{margin-top: 5px; max-width: 100%;}
-    .foodrecipes{padding-top:0;}
     .recipes{display:flex; flex-wrap: wrap;}
 }
 </style>
@@ -86,12 +90,14 @@
 
     <h2>Introduction to Big 3 Elements</h2>
     <p>As is known to all, the energy required by the human body to maintain normal liver function and daily activities is mainly ingested from food, and food can provide energy substances including carbohydrates, fat, and proteins.</p>
-    <p>In fact, most common foods contain all three nutrients at the same time, but in different proportions, and therefore can be classified as different nutrient supplement foods. </p>
-    <p>When it comes to meat, for example, focus on protein; when it comes to potatoes, the main supplement is carbohydrates; when it comes to nuts, focus on fat.</p>
+    <p>In fact, most common foods contain all three nutrients at the same time, but in different proportions, and therefore can be classified as different nutrient supplement foods. When it comes to meat, for example, focus on protein; when it comes to potatoes, the main supplement is carbohydrates; when it comes to nuts, focus on fat.</p>
+    <div class="plate">
+        <img src="../images/healthplate.jpeg" alt="health portion control plate" width="300" height="300">
+    </div>
     
     <h2>Section One: Basic Nutrition Terms and Definitions</h2>
     <h3>Proteins</h3>
-    <img src="../images/protein.jpeg" alt="protein" width="200" height="200" id="protein">
+    <img src="../images/protein.jpeg" alt="protein" width="300" height="300" id="protein">
     <p>Protein is the material basis of all life, is an important part of the body cells, and is the main raw material of human tissue renewal and repair.
         Protein is not only a key ingredient in food, but it's also a basic building block of your body. Most meats contain both protein and fat. However, so too much animal-derived protein means too many calories and fat, resulting in weight gain.</p>
         <ul>
@@ -102,7 +108,7 @@
         </ul>
 
     <h3 class="carb">Carbohydrate</h3>
-    <img src="../images/carbs.jpeg" alt="bread" width="200" height="200" id="carb">
+    <img src="../images/carbs.jpeg" alt="bread" width="300" height="300" id="carb">
     <p>Carbohydrates, which include starches and sugars, have the greatest impact on blood sugar among all foods. After digestion, these two forms of carbohydrates are broken down into simple sugars called glucose in the body. Carbohydrates play a significant role in our diet because glucose is the primary monosaccharide that provides energy to the body.</p>
     <ul>
         <li>Rice, grains, cereal, noodles</li>
@@ -114,7 +120,7 @@
     </ul>
 
     <h3 class="fat"> Fats</h3>
-    <img src="../images/fat.png" alt="bread" width="200" height="1000" id="fat">
+    <img src="../images/fat.jpeg" alt="bread" width="300" height="300" id="fat">
     <p>Human dietary fat sources are mainly animal fat and plant fat.</p>
     <p>Fat is a source of essential fatty acids, which the body cannot make itself. Fat helps the body absorb vitamin A, vitamin D and vitamin E. These vitamins are fat-soluble, which means they can only be absorbed with the help of fats.</p>
     <p>Fat has four main effects on the human body:</p>
@@ -146,18 +152,18 @@
     <div class=foodrecipes>
         <h2>Food Recipes Around the World </h2>
     </div>
-    <div class="repicpes">
+<div class="repicpes">
     <div class="redcurry">
         <h3>Asian: Red Curry Chicken</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ff47YVuHGPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Ff47YVuHGPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="mediterranean">
         <h3>the Mediterranean: Shakshuka</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/3AC8thsvwW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/3AC8thsvwW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="european">
         <h3>European: Mozzarella, Basil & Zucchini Frittata</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/AKpNTn-lD18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/AKpNTn-lD18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 </div>
 
