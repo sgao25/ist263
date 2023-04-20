@@ -27,23 +27,27 @@
     margin:10px;
 }
 .screenshot{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .youtube{
     display:flex;
     flex-wrap: wrap;
 }
 .pamela{
+    flex:1;
     padding:10px;
 }
 .fitnessmarshall{
-    padding:10px
+  flex:1;
+  padding:10px
 }
 @media only screen and (max-width:600px){
   .heartrate{display:flex; justify-content: center;}
     .youtube{display:flex; flex-wrap: wrap;}
+    .pamela{width:100%;}
+    .fitnessmarshall{width:100%;}
     img{max-width: 100%;}
 }
   </style>
@@ -114,11 +118,11 @@
 <div class="youtube">
   <div class="pamela">
   <p>Pamela Reif is a popular YouTuber who specializes in fitness and lifestyle content. Her videos are well-produced, informative, and engaging, making her channel a great resource for anyone looking to improve their health and fitness. Additionally, her positive and motivational attitude is sure to inspire you to take action towards your health and fitness goals.</p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Y2eOW7XYWxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/Y2eOW7XYWxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
   <div class=fitnessmarshall>
   <p>If you're looking for a fun and energetic way to get fit, I highly recommend checking out The Fitness Marshall! With his infectious dance routines and upbeat personality, The Fitness Marshall makes working out feel like a party. His videos are perfect for anyone looking to get in shape while having fun and learning some killer dance moves along the way. Give it a try and get ready to sweat!</p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Z7QGF4l9buc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe  src="https://www.youtube.com/embed/Z7QGF4l9buc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
 </div>
 
