@@ -1,0 +1,40 @@
+.skip {
+    background-color: #b30000;
+    color:#ffffff;
+    padding: 5px;
+    text-decoration: none;
+    position: absolute; 
+    top: 10px;
+    left:-999px;
+}
+.skip:focus{
+    left:10px;
+}
+
+@media only screen and (max-width:600px){
+    span{display:none;}
+    nav a {
+        width: 100%;
+        display: block; 
+    }
+}
+
+.copyright {float: right;}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,200;1,8..144,100;1,8..144,200&display=swap" rel="stylesheet">
+
+.whole {
+    background-color: black;
+    color: white;
+    margin: 30px;
+  }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a:hover {
+      color: #FF007F;
+}
