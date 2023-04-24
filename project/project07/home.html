@@ -11,90 +11,66 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,200;1,8..144,100;1,8..144,200&display=swap" rel="stylesheet">
 
 <style>
-#authorpicture{
-    float: left;
-    margin-right: 20px;
+#authorpicture, #nutritionpicture, #fitnesspicture{
     margin-bottom: 30px;
+    margin-left: 20px;
 }
-#nutritionpicture{
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 30px;
-}
-#fitnesspicture{
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 30px;
-}
-.part2{
+
+.clear{
     clear:both;
-}
-.part3{
-    clear:both;
-}
-.part4{
-    clear:both;
-}
-.introduction{
-    border: 1px solid black;
-    padding: 10px;
-    width:200px;
-}
-.nutrition{
-    border: 1px solid black;
-    padding: 10px;
-    width:200px;
-}
-.fitness{
-    border: 1px solid black;
-    padding: 10px;
-    width:200px;
 }
 
 </style>
 </head>
 
 <body>
+    <a href="#main" class="skip" tabindex="1">Skip to Content</a><br>
     <nav>
-        <a href=home.html> Home </a> <span>|</span>
-        <a href=fitness.html> Fitness </a> <span>|</span> 
-        <a href="nutrition.html"> Nutrition</a>
+        <div>
+            <a href=home.html style="display: inline-block;"> Home </a>
+            <span>|</span>
+            <a href=fitness.html style="display: inline-block;"> Fitness </a>
+            <span>|</span> 
+            <a href="nutrition.html" style="display: inline-block;"> Nutrition</a>
+        </div>
 
-        <form action="/search" method="get">
-            <label for="search">Search:</label>
-            <input type="text" id="search" name="q">
-            <button type="submit">Go</button>
-          </form>
+        <div>
+            <form action="/search" method="get">
+                <label for="search">Search:</label>
+                <input type="text" id="search" name="q">
+                <button type="submit">Go</button>
+            </form>
+        </div>
     </nav>
 
-<div class="whole">
-<h1 id="main">Home Page</h1>
+<main id="main">
+    <h1>Home Page</h1>
 
-<section>
-<h2 class="introduction">About Me</h2>
-<p>My name is Sabrina Gao. I am majoring in public relations and am interested in fashion, beauty, and entertainment fields. I am also minoring in information management and technology. </p>
-<p>I was in Chattanooga, Tennessee for my high school. I was on the cross-country team for three years, and a soccer manager for 2 years. Also, because of this experience, I developed one of my hobbies: going to the gym. </p>
-<p>I hope this website can help to build a basic knowledge of fitness and nutrition for people to improve their daily habits.</p>
-<img src="../images/self.JPG" alt="author's picture" width="400" height="500" id="authorpicture">
-</section>
+    <section>
+        <h2>About Me</h2>
+            <p>My name is Sabrina Gao. I am majoring in public relations and am interested in fashion, beauty, and entertainment fields. I am also minoring in information management and technology. </p>
+            <p>I was in Chattanooga, Tennessee for my high school. I was on the cross-country team for three years, and a soccer manager for 2 years. Also, because of this experience, I developed one of my hobbies: going to the gym. </p>
+            <p>I hope this website can help to build a basic knowledge of fitness and nutrition for people to improve their daily habits.</p>
+            <img src="../images/self.JPG" alt="author's picture" width="400" height="500" id="authorpicture">
+    </section>
 
-<section class="part2">
-<h2 class="nutrition">Nutrition</h2>
-<p>It focuses on the three main elements: carbohydrates, fats, and proteins.</p>
-<p>It introduces healthy and delicious food recipes from around the world. Additionally, it provides tips for individuals interested in maintaining weight, losing weight, and gaining muscle.</p>
-<img src="../images/home-nutrition.jpeg" alt="word picture for nutrition" width="400" height="500" id="nutritionpicture">
-</section>
+    <section>
+        <h2>Nutrition</h2>
+            <p>It focuses on the three main elements: carbohydrates, fats, and proteins.</p>
+            <p>It introduces healthy and delicious food recipes from around the world. Additionally, it provides tips for individuals interested in maintaining weight, losing weight, and gaining muscle.</p>
+            <img src="../images/home-nutrition.jpeg" alt="word picture for nutrition" width="400" height="500" id="nutritionpicture">
+    </section>
 
-<section class="part3">
-<h2 class="fitness">Fitness</h2>
-<p>The part introduces the difference between aerobic and anaerobic exercises and helps you choose the best one to improve your health.</p>
-<p>Additionally, it provides recommendations for my favorite sports YouTubers. Choose the one that best fits your needs!</p>
-<img src="../images/homepage-gym.jpeg" alt="word picture for fitness" width="400" height="500" id="fitnesspicture">
-</section>
-</div>
+    <section>
+        <h2>Fitness</h2>
+            <p>The part introduces the difference between aerobic and anaerobic exercises and helps you choose the best one to improve your health.</p>
+            <p>Additionally, it provides recommendations for my favorite sports YouTubers. Choose the one that best fits your needs!</p>
+            <img src="../images/homepage-gym.jpeg" alt="word picture for fitness" width="400" height="500" id="fitnesspicture">
+    </section>
+</main>
 
 
-<footer class="part4">
+<footer class="clear">
 <hr>
 <h3>Contact US</h3>
 <label for="content"> Content:</label>

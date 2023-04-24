@@ -12,20 +12,23 @@
 }
 
 @media only screen and (max-width:600px){
-    span{display:none;}
+    span{
+        display:none;
+    }
     nav a {
         width: 100%;
-        display: block; 
+        display: block;
     }
 }
 
 .copyright {float: right;}
 
-.whole {
+main {
     background-color: #000000;
     color: white;
     margin: 30px;
   }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -33,4 +36,19 @@ nav {
 }
 nav a:hover {
       color: #FF007F;
+}
+
+h2{
+    margin-left: 10px;
+}
+
+p{
+    margin-left: 20px;
+}
+
+h1{
+    margin-left: 5px;
+}
+h3{
+    margin-left: 20px;
 }

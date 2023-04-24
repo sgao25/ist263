@@ -14,89 +14,48 @@
 .plate{
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-#protein{
-    float:right;
-    margin-right: 20px;
+.proteins, .carb, .fat{
+    display: flex;
     flex-wrap: wrap;
 }
-#carb{
-    float:right;
-    margin-right: 20px;
+.p1, .c1, .f1{
+    flex: 2;
+    min-width: 300px;
+}
+.p2, .c2, .f2, .redcurry, .mediterranean, .european{
+    flex: 1;
+}
+.recipes{
+    display: flex;
     flex-wrap: wrap;
 }
-#fat{
-    float:right;
-    margin-right: 20px;
-    margin-left:30px;
-    flex-wrap: wrap;
-}
-.carb{
-    clear:both;
-}
-.fat{
-    clear:both;
-}
-.dietandhealth{
-    padding:10px;
-    border:1px solid black;
-    max-width: 100%;
 
-}
-.type1{
-    margin:10px;
-    padding-bottom:10px;
-}
-.type2{
-    margin:10px;
-    padding-bottom:10px;
-}
-.kidney{
-    margin:10px;
-    padding-bottom:10px;
-}
-.fatintake{
-    margin:10px;
-}
-.foodrecipes{
-    padding-top: 30px;
-    max-width: 100%;
-}
-.repicpes{
-    padding-top: 10px;
-    display:flex;
-    flex-wrap:wrap;
-}
-.repicpes iframe{width:32.8vw;}
-
-
-@media only screen and (max-width:600px){
-    .section2{margin-top: 50px; max-width: 100%;}
-    .dietandhealth{margin-top: 5px; max-width: 100%;}
-    .repicpes{display:flex; flex-direction: column-reverse;}
-    .repicpes iframe{width:100%;}
-    textarea{width:100%;}
-}
 </style>
 </head>
 
 <body>
+    <a href="#main" class="skip" tabindex="1">Skip to Content</a><br>
     <nav>
-        <a href=home.html> Home </a> <span>|</span>
-        <a href=fitness.html> Fitness </a> <span>|</span> 
-        <a href="nutrition.html"> Nutrition</a>
+        <div>
+            <a href=home.html style="display: inline-block;"> Home </a>
+            <span>|</span>
+            <a href=fitness.html style="display: inline-block;"> Fitness </a>
+            <span>|</span> 
+            <a href="nutrition.html" style="display: inline-block;"> Nutrition</a>
+        </div>
 
-        <form action="/search" method="get">
-            <label for="search">Search:</label>
-            <input type="text" id="search" name="q">
-            <button type="submit">Go</button>
-          </form>
+        <div>
+            <form action="/search" method="get">
+                <label for="search">Search:</label>
+                <input type="text" id="search" name="q">
+                <button type="submit">Go</button>
+            </form>
+        </div>
     </nav>
 
-<div class="whole">
-    <h1 id="main">Nutrition</h1>
-
+<main id="main">
+    <h1>Nutrition</h1>
     <h2>Introduction to Big 3 Elements</h2>
     <p>As is known to all, the energy required by the human body to maintain normal liver function and daily activities is mainly ingested from food, and food can provide energy substances including carbohydrates, fat, and proteins.</p>
     <p>In fact, most common foods contain all three nutrients at the same time, but in different proportions, and therefore can be classified as different nutrient supplement foods. When it comes to meat, for example, focus on protein; when it comes to potatoes, the main supplement is carbohydrates; when it comes to nuts, focus on fat.</p>
@@ -105,79 +64,95 @@
     </div>
     
     <h2>Section One: Basic Nutrition Terms and Definitions</h2>
-    <h3>Proteins</h3>
-    <img src="../images/protein.jpeg" alt="protein" width="300" height="300" id="protein">
-    <p>Protein is the material basis of all life, is an important part of the body cells, and is the main raw material of human tissue renewal and repair.
-        Protein is not only a key ingredient in food, but it's also a basic building block of your body. Most meats contain both protein and fat. However, so too much animal-derived protein means too many calories and fat, resulting in weight gain.</p>
-        <ul>
-            <li>Meat: beef, chicken, <strong> chicken breast</strong>, and pork</li>
-            <li>Seafood: fish, lobster, and shellfish</li>
-            <li>Dairy products: egg and cheese</li>
-            <li>Plant sources of protein, such as beans, nuts, and tofu</li>
-        </ul>
 
-    <h3 class="carb">Carbohydrate</h3>
-    <img src="../images/carbs.jpeg" alt="bread" width="300" height="300" id="carb">
-    <p>Carbohydrates, which include starches and sugars, have the greatest impact on blood sugar among all foods. After digestion, these two forms of carbohydrates are broken down into simple sugars called glucose in the body. Carbohydrates play a significant role in our diet because glucose is the primary monosaccharide that provides energy to the body.</p>
-    <ul>
-        <li>Rice, grains, cereal, noodles</li>
-        <li>Bread, tortillas, cookies, bagels</li>
-        <li>Dried beans, peas, lentils </li>
-        <li>Vegetables such as potatoes, corn, beans, squash </li>
-        <li>Fruit</li>
-        <li>Sugars, like cane sugar and honey</li>
-    </ul>
 
-    <h3 class="fat"> Fats</h3>
-    <img src="../images/fat.jpeg" alt="bread" width="300" height="300" id="fat">
-    <p>Human dietary fat sources are mainly animal fat and plant fat.</p>
-    <p>Fat is a source of essential fatty acids, which the body cannot make itself. Fat helps the body absorb vitamin A, vitamin D and vitamin E. These vitamins are fat-soluble, which means they can only be absorbed with the help of fats.</p>
-    <p>Fat has four main effects on the human body:</p>
-    <ul>
-        <li>Caloric function: Fat produces about 2.2 times as many calories as the same amount of protein or carbohydrate. It can be seen that fat is an important source of body heat.</li>
-        <li>The role of constituting body tissues and bioactive substances. Fat is one of the most important components of body cells.</li>
-        <li>The role of regulating physiological function.</li>
-        <li>Fat can also store "fuel" for the body as a backup. After eating fat, the unused portion can be stored in the body for use when the body needs heat.</li>
-    </ul>
-    <p>High Fat Foods</p>
-    <ul>
-        <li>Butter and margarine </li>
-        <li>Oils, such as vegetable oil. Olive oil and canola oil </li>
-        <li>Salad dressing and mayonnaise</li>
-        <li>Nuts and seeds</li>
-    </ul>
-
-    <div class="section2">
-        <h2>Section 2: Diet and Health</h2>
+    <div class="proteins">
+        <div class="p1">
+            <h3>Proteins</h3>
+            <p>Protein is the material basis of all life, is an important part of the body cells, and is the main raw material of human tissue renewal and repair.
+                Protein is not only a key ingredient in food, but it's also a basic building block of your body. Most meats contain both protein and fat. However, so too much animal-derived protein means too many calories and fat, resulting in weight gain.</p>
+                <ul>
+                    <li>Meat: beef, chicken, <strong> chicken breast</strong>, and pork</li>
+                    <li>Seafood: fish, lobster, and shellfish</li>
+                    <li>Dairy products: egg and cheese</li>
+                    <li>Plant sources of protein, such as beans, nuts, and tofu</li>
+                </ul>
+        </div>
+        <div class="p2">
+            <img src="../images/protein.jpeg" alt="protein" width="300" height="300">
+        </div>
     </div>
-    <div class="dietandhealth">
-      <div class="type1">Type 1 disbetes: You have to eat the right amount of carbohydrates to match your insulin intake. To achieve ideal blood sugar, it is important to calculate carbohydrates accurately. Carbohydrates are measured in grams of weight, and changes of even a few grams can cause fluctuations in blood sugar.</div>
-      <div class="type2">Type 2 diabetes and use insulin: Carbohydrate intake and medication must be matched appropriately. For optimal blood sugar results, carbohydrate calculations must be accurate.</div>
-      <div class="kidney">Kidney Problems: You need to limit your protein intake.</div>
-      <div class="fatintake">Limiting fat intake: Help <strong>control weight</strong> and <strong>prevent heart and vascular diseases</strong></div>
-    </div>
-    
 
-    <div class=foodrecipes>
-        <h2>Food Recipes Around the World </h2>
+
+
+    <div class="carb">
+        <div class="c1">
+            <h3>Carbohydrate</h3>
+            <p>Carbohydrates, which include starches and sugars, have the greatest impact on blood sugar among all foods. After digestion, these two forms of carbohydrates are broken down into simple sugars called glucose in the body. Carbohydrates play a significant role in our diet because glucose is the primary monosaccharide that provides energy to the body.</p>
+            <ul>
+                <li>Rice, grains, cereal, noodles</li>
+                <li>Bread, tortillas, cookies, bagels</li>
+                <li>Dried beans, peas, lentils </li>
+                <li>Vegetables such as potatoes, corn, beans, squash </li>
+                <li>Fruit</li>
+                <li>Sugars, like cane sugar and honey</li>
+            </ul>
+        </div>
+        <div class="c2">
+            <img src="../images/carbs.jpeg" alt="bread" width="300" height="300" id="carb">
+        </div>
     </div>
-    <div class="repicpes">
+
+    <div class="fat">
+        <div class="f1">
+            <h3>Fats</h3>
+
+            <p>Human dietary fat sources are mainly animal fat and plant fat.</p>
+            <p>Fat is a source of essential fatty acids, which the body cannot make itself. Fat helps the body absorb vitamin A, vitamin D and vitamin E. These vitamins are fat-soluble, which means they can only be absorbed with the help of fats.</p>
+            <p>Fat has four main effects on the human body:</p>
+            <ul>
+                <li>Caloric function: Fat produces about 2.2 times as many calories as the same amount of protein or carbohydrate. It can be seen that fat is an important source of body heat.</li>
+                <li>The role of constituting body tissues and bioactive substances. Fat is one of the most important components of body cells.</li>
+                <li>The role of regulating physiological function.</li>
+                <li>Fat can also store "fuel" for the body as a backup. After eating fat, the unused portion can be stored in the body for use when the body needs heat.</li>
+            </ul>
+            <p>High Fat Foods</p>
+            <ul>
+                <li>Butter and margarine </li>
+                <li>Oils, such as vegetable oil. Olive oil and canola oil </li>
+                <li>Salad dressing and mayonnaise</li>
+                <li>Nuts and seeds</li>
+            </ul>
+        </div>
+        <div class="f2">
+            <img src="../images/fat.jpeg" alt="bread" width="300" height="300" id="fat">
+        </div>
+    </div>
+
+    <h2>Section 2: Diet and Health</h2>
+    <p>Type 1 disbetes: You have to eat the right amount of carbohydrates to match your insulin intake. To achieve ideal blood sugar, it is important to calculate carbohydrates accurately. Carbohydrates are measured in grams of weight, and changes of even a few grams can cause fluctuations in blood sugar.</p>
+    <p>Type 2 diabetes and use insulin: Carbohydrate intake and medication must be matched appropriately. For optimal blood sugar results, carbohydrate calculations must be accurate.</p>
+    <p>Kidney Problems: You need to limit your protein intake.</p>
+    <p>Limiting fat intake: Help <strong>control weight</strong> and <strong>prevent heart and vascular diseases</strong></p>
+
+    <h2>Food Recipes Around the World </h2>
+    <div class="recipes">
         <div class="redcurry">
             <h3>Asian: Red Curry Chicken</h3>
             <iframe src="https://www.youtube.com/embed/Ff47YVuHGPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    <div class="mediterranean">
+        </div>
+        <div class="mediterranean">
             <h3>the Mediterranean: Shakshuka</h3>
             <iframe src="https://www.youtube.com/embed/3AC8thsvwW4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="european">
+            <h3>European: Mozzarella, Basil & Zucchini Frittata</h3>
+            <iframe src="https://www.youtube.com/embed/AKpNTn-lD18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </div>
-    <div class="european">
-        <h3>European: Mozzarella, Basil & Zucchini Frittata</h3>
-        <iframe src="https://www.youtube.com/embed/AKpNTn-lD18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-    </div>
-</div>
+</main>
 
-    <footer class="part4">
+<footer">
     <hr>
     <h3>Contact US</h3>
     <label for="content"> Content:</label>
