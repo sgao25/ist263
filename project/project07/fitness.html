@@ -34,6 +34,17 @@ img{
   margin-right: 20px;
   width: 50%;
 }
+
+.benefit {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aerolist, .aeaelist {
+  flex-basis: 50%;
+  padding: 10px;
+}
+
 @media only screen and (max-width:600px){
   img{
     width: 90%;
@@ -86,32 +97,38 @@ img{
     <p>refers to physical exercise carried out by the human body under the condition of adequate supply of oxygen.</p>
     <p>Aerobic exercise <strong>(Max heart rate =220- age)</strong> is the type of exercise that keeps heart rate at 60% to 80% of max heart rate per minute, because blood can supply enough oxygen to the heart muscle.</p>
     <p>Aerobic exercise is characterized by <strong>low intensity, rhythm, and long duration.</strong> At this time, the body's energy supply mainly comes from the <strong>aerobic metabolism of fat.</strong></p>
-    <div><img src="../images/gym-aerobic.png" alt="yoga"></div>
+    <div><img src="../images/yoga.jpeg" alt="yoga" width="50" height="400" ></div>
 
 
     <h3>Anaerobic exercise</h3>
    <p>It is the exercise that muscles perform at high speed. </p>
    <p>Anaerobic exercise is mostly exercise with <strong>high load intensity and strong instant.</strong></p>
    <p>When we engage in very intense sports, the body needs a lot of energy in an instant, and under normal circumstances, aerobic metabolism is not able to meet the needs of the body at this time, so <strong>sugar changes to anaerobic metabolism model </strong>in order to quickly generate large amounts of energy.</p>
-   <img src="../images/sprinting.jpeg" alt="sprinting">
+   <img src="../images/sprinting.jpeg" alt="sprinting" width="10" height="400">
 
     <hr>
     <h2>Benefits</h2>
-    <h3>Aerobic</h3>
-    <p>It has been shown to benefit the control of blood sugar and blood fat levels, as well as aid in weight loss and improve cardiorespiratory fitness. </p>
-    <ol>
-        <li>brisk walking</li> 
-        <li>jogging</li> 
-        <li>swimming </li>
-        <li>cycling</li>
-    </ol>
-    <h3>Anaerobic</h3>
-  <p>It aids in building muscle and increasing muscle strength. It also has potential benefits in preventing osteoporosis and improving cardiovascular and pulmonary function.</p>
-   <ul>
-    <li>Sprinting</li>
-    <li>Speinting</li>
-    <li>Weightlifting</li>
-  </ul>
+    <div class="benefit">
+    <div class="aerolist">
+        <h3>Aerobic</h3>
+        <p>It has been shown to benefit the control of blood sugar and blood fat levels, as well as aid in weight loss and improve cardiorespiratory fitness. </p>
+        <ol>
+          <li>brisk walking</li> 
+          <li>jogging</li> 
+          <li>swimming </li>
+          <li>cycling</li>
+        </ol>
+      </div>
+      <div class="aeaelist">
+      <h3>Anaerobic</h3>
+      <p>It aids in building muscle and increasing muscle strength. It also has potential benefits in preventing osteoporosis and improving cardiovascular and pulmonary function.</p>
+      <ul>
+        <li>Sprinting</li>
+        <li>Speinting</li>
+        <li>Weightlifting</li>
+      </ul>
+    </div>
+    </div>
 
   <h2>Tips </h2>
   <p>Lose fat: Recommended to warm up + anaerobic (30min) + aerobic (20+min)</p>
