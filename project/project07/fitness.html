@@ -37,12 +37,6 @@ img{
 
 .benefit {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.aerolist, .aeaelist {
-  flex-basis: 50%;
-  padding: 10px;
 }
 
 @media only screen and (max-width:600px){
@@ -55,6 +49,7 @@ img{
   #pamela, #fitnessmarshall{
     width: 90%;
   }
+  .benefit{flex-wrap: wrap;}
 
 }
 
@@ -109,25 +104,25 @@ img{
     <hr>
     <h2>Benefits</h2>
     <div class="benefit">
-    <div class="aerolist">
-        <h3>Aerobic</h3>
-        <p>It has been shown to benefit the control of blood sugar and blood fat levels, as well as aid in weight loss and improve cardiorespiratory fitness. </p>
-        <ol>
-          <li>brisk walking</li> 
-          <li>jogging</li> 
-          <li>swimming </li>
-          <li>cycling</li>
-        </ol>
+      <div class="aerolist">
+          <h3>Aerobic</h3>
+          <p>It has been shown to benefit the control of blood sugar and blood fat levels, as well as aid in weight loss and improve cardiorespiratory fitness. </p>
+          <ol>
+            <li>brisk walking</li> 
+            <li>jogging</li> 
+            <li>swimming </li>
+            <li>cycling</li>
+          </ol>
+        </div>
+        <div class="aeaelist">
+        <h3>Anaerobic</h3>
+        <p>It aids in building muscle and increasing muscle strength. It also has potential benefits in preventing osteoporosis and improving cardiovascular and pulmonary function.</p>
+        <ul>
+          <li>Sprinting</li>
+          <li>Speinting</li>
+          <li>Weightlifting</li>
+        </ul>
       </div>
-      <div class="aeaelist">
-      <h3>Anaerobic</h3>
-      <p>It aids in building muscle and increasing muscle strength. It also has potential benefits in preventing osteoporosis and improving cardiovascular and pulmonary function.</p>
-      <ul>
-        <li>Sprinting</li>
-        <li>Speinting</li>
-        <li>Weightlifting</li>
-      </ul>
-    </div>
     </div>
 
   <h2>Tips </h2>

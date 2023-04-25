@@ -12,17 +12,30 @@
 
 <style>
 #authorpicture, #nutritionpicture, #fitnesspicture{
-    margin-bottom: 30px;
-    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
 }
-
+#authorpicture {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
 .clear{
     clear:both;
 }
-@media only screen and (max-width:600px){
+.NutandFit{
+    display:flex;
+}
+h1 {
+    color:#FF007F;
+	text-align: center;
+}
+
+@media only screen and (max-width:900px){
   img{
     width: 90%;
   }
+  .NutandFit{flex-wrap: wrap;}
 }
 </style>
 </head>
@@ -48,7 +61,7 @@
     </nav>
 
 <main id="main">
-    <h1>Home Page</h1>
+    <h1>FitFuel</h1>
 
     <section>
         <h2>About Me</h2>
@@ -58,19 +71,25 @@
             <img src="../images/self.JPG" alt="author's picture" width="400" height="500" id="authorpicture">
     </section>
 
-    <section>
-        <h2>Nutrition</h2>
-            <p>It focuses on the three main elements: carbohydrates, fats, and proteins.</p>
-            <p>It introduces healthy and delicious food recipes from around the world. Additionally, it provides tips for individuals interested in maintaining weight, losing weight, and gaining muscle.</p>
-            <img src="../images/2.png" alt="macronutrients chart" width="500" height="500" id="nutritionpicture">
-    </section>
+    <div class=NutandFit>
+        <section>
+            <div class="nutrition">
+            <h2>Nutrition</h2>
+                <p>It focuses on the three main elements: carbohydrates, fats, and proteins.</p>
+                <p>It introduces healthy and delicious food recipes from around the world. Additionally, it provides tips for individuals interested in maintaining weight, losing weight, and gaining muscle.</p>
+                <img src="../images/2.png" alt="macronutrients chart" width="500" height="400" id="nutritionpicture">
+            </div>
+        </section>
 
-    <section>
-        <h2>Fitness</h2>
-            <p>The part introduces the difference between aerobic and anaerobic exercises and helps you choose the best one to improve your health.</p>
-            <p>Additionally, it provides recommendations for my favorite sports YouTubers. Choose the one that best fits your needs!</p>
-            <img src="../images/sport.jpeg" alt="Conceptual collage of sports photo in the form of the word" width="600" height="400" id="fitnesspicture">
-    </section>
+        <section>
+            <h2>Fitness</h2>
+            <div class="fitness">
+                <p>The part introduces the difference between aerobic and anaerobic exercises and helps you choose the best one to improve your health.</p>
+                <p>Additionally, it provides recommendations for my favorite sports YouTubers. Choose the one that best fits your needs!</p>
+                <img src="../images/sport.jpeg" alt="Conceptual collage of sports photo in the form of the word" width="600" height="400" id="fitnesspicture">
+            </div>
+        </section>
+    </div>
 </main>
 
 
