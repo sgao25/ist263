@@ -38,6 +38,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     flex-wrap:wrap;
+    padding-left: 30px;
+    padding-right: 10px;
 }
 nav a:hover {
       color: #FF007F;
